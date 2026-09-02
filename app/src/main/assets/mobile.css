@@ -31,14 +31,14 @@ header .wrap>div{font-size:10px!important}
 .monthgrid{width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch;border-radius:12px}
 table{font-size:11px!important}
 th,td{padding:8px 7px!important}
-#byty,#platbykontrola,#mesice,#platby,#dluhy,#hala{overflow:hidden}
-/* Karta Byty nema kolem tabulky .monthgrid, proto musi byt vodorovne posuvna sama. */
+#byty,#platbykontrola,#mesice,#platby,#hala{overflow:visible}
 #byty{overflow-x:auto!important;-webkit-overflow-scrolling:touch}
 #byty table{min-width:900px}
 #platbykontrola table{min-width:900px}
 #mesice table{min-width:900px}
 #platby table{min-width:650px}
-#dluhy table{min-width:650px}
+#dluhy{overflow-x:auto!important;overflow-y:visible!important;-webkit-overflow-scrolling:touch;padding-bottom:4px}
+#dluhy table{display:table!important;width:max-content!important;min-width:700px!important;max-width:none!important;overflow:visible!important}
 #hala table{min-width:850px}
 .form{grid-template-columns:1fr 1fr!important;gap:8px!important;padding:10px!important;border-radius:12px!important}
 .form>div:nth-child(5),.form>div:nth-child(6){grid-column:1/-1}
