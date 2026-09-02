@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Rockford app icon – concept 4: house + key -->
+    <path
+        android:fillColor="#0B5D3B"
+        android:pathData="M10,0 L98,0 Q108,0 108,10 L108,98 Q108,108 98,108 L10,108 Q0,108 0,98 L0,10 Q0,0 10,0 Z" />
+
+    <!-- House -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M24,49 L54,22 L84,49 L84,82 L24,82 Z" />
+    <path
+        android:fillColor="#0B5D3B"
+        android:pathData="M36,56 L72,56 L72,82 L36,82 Z" />
+    <path
+        android:fillColor="#0B5D3B"
+        android:pathData="M29,47 L54,25 L79,47 L73,47 L54,31 L35,47 Z" />
+
+    <!-- Key -->
+    <path
+        android:fillColor="#B7E33A"
+        android:pathData="M72,66 A10,10 0 1,0 72,86 A10,10 0 0,0 72,66 M72,72 A4,4 0 1,1 72,80 A4,4 0 0,1 72,72 Z" />
+    <path
+        android:fillColor="#B7E33A"
+        android:pathData="M77,71 L92,56 L97,61 L82,76 Z" />
+    <path
+        android:fillColor="#B7E33A"
+        android:pathData="M88,60 L94,54 L99,59 L93,65 Z" />
+    <path
+        android:fillColor="#B7E33A"
+        android:pathData="M82,66 L87,61 L92,66 L87,71 Z" />
+</vector>
