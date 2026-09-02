@@ -1,6 +1,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
     <uses-permission android:name="android.permission.INTERNET" />
-    <application android:theme="@style/AppTheme" android:label="Rockford Správa nemovitostí" android:allowBackup="false" android:supportsRtl="true">
+    <application
+        android:theme="@style/AppTheme"
+        android:label="Rockford Správa nemovitostí"
+        android:icon="@drawable/ic_rockford_launcher"
+        android:roundIcon="@drawable/ic_rockford_launcher"
+        android:allowBackup="false"
+        android:supportsRtl="true">
         <activity android:name=".MainActivity" android:screenOrientation="portrait" android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
