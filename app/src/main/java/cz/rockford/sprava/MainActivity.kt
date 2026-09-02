@@ -41,10 +41,30 @@ class MainActivity : Activity() {
             runOnUiThread {
                 val safe = JSONObject.quote(json)
                 val base = assets.open("index.html").bufferedReader().use { it.readText() }
-                val html = base
-                    .replace("window.__ROCKFORD_DATA__ || {}", "JSON.parse($safe)")
-                    .replace("</head>", "<link rel=\"stylesheet\" href=\"mobile.css\"></head>")
-                    .replace("</body>", "<script src=\"mobile.js\"></script></body>")
+
+                // Dulezite: index.html obsahuje JavaScriptovou funkci printReminder(),
+                // ve ktere je text "</body>" uvnitr retezce. Obycejne replace() by
+                // nahradilo tuto prvni vyskyt a WebView by zbytek JavaScriptu zobrazilo
+                // jako obycejny text. Proto vkladame mobile.js pouze pred POSLEDNI
+                // skutecny uzaviraci </body> dokumentu.
+                val withData = base.replace(
+                    "window.__ROCKFORD_DATA__ || {}",
+                    "JSON.parse($safe)"
+                )
+                val withCss = withData.replace(
+                    "</head>",
+                    "<link rel=\"stylesheet\" href=\"mobile.css\"></head>"
+                )
+                val bodyClose = "</body>"
+                val bodyIndex = withCss.lastIndexOf(bodyClose)
+                val html = if (bodyIndex >= 0) {
+                    withCss.substring(0, bodyIndex) +
+                        "<script src=\"mobile.js\"></script>" +
+                        withCss.substring(bodyIndex)
+                } else {
+                    withCss + "<script src=\"mobile.js\"></script>"
+                }
+
                 web.loadDataWithBaseURL("file:///android_asset/", html, "text/html", "UTF-8", null)
                 if (fresh == null && cached == null) {
                     Toast.makeText(this, "Offline: pouzita data zabalena v aplikaci.", Toast.LENGTH_SHORT).show()
