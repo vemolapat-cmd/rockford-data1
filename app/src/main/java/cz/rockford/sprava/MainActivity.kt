@@ -12,8 +12,8 @@ import java.net.URL
 class MainActivity : Activity() {
     private lateinit var web: WebView
 
-    // Sem později vložíme skutečnou adresu centrálního Rockford datového souboru.
-    // Aplikace při spuštění stáhne aktuální JSON; když není internet, použije poslední uložená data.
+    // Sem pozdeji vlozime skutecnou adresu centralniho Rockford datoveho souboru.
+    // Aplikace pri spusteni stahne aktualni JSON; kdyz neni internet, pouzije posledni ulozena data.
     private val dataUrl = "https://YOUR-DATA-SERVER.example/rockford-data.json"
     private val prefs by lazy { getSharedPreferences("rockford", MODE_PRIVATE) }
 
@@ -23,6 +23,9 @@ class MainActivity : Activity() {
             settings.javaScriptEnabled = true
             settings.domStorageEnabled = true
             settings.allowFileAccess = true
+            settings.allowContentAccess = true
+            settings.loadWithOverviewMode = true
+            settings.useWideViewPort = true
             webViewClient = WebViewClient()
         }
         setContentView(web)
@@ -38,10 +41,13 @@ class MainActivity : Activity() {
             runOnUiThread {
                 val safe = JSONObject.quote(json)
                 val base = assets.open("index.html").bufferedReader().use { it.readText() }
-                val html = base.replace("window.__ROCKFORD_DATA__ || {}", "JSON.parse($safe)")
+                val html = base
+                    .replace("window.__ROCKFORD_DATA__ || {}", "JSON.parse($safe)")
+                    .replace("</head>", "<link rel=\"stylesheet\" href=\"mobile.css\"></head>")
+                    .replace("</body>", "<script src=\"mobile.js\"></script></body>")
                 web.loadDataWithBaseURL("file:///android_asset/", html, "text/html", "UTF-8", null)
                 if (fresh == null && cached == null) {
-                    Toast.makeText(this, "Offline: použita data zabalená v aplikaci.", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this, "Offline: pouzita data zabalena v aplikaci.", Toast.LENGTH_SHORT).show()
                 }
             }
         }.start()
