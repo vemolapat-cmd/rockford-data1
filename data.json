@@ -1,0 +1,537 @@
+{
+  "months": [
+    "leden",
+    "únor",
+    "březen",
+    "duben",
+    "květen",
+    "červen",
+    "červenec",
+    "srpen",
+    "září",
+    "říjen",
+    "listopad",
+    "prosinec"
+  ],
+  "rentByMonth": {
+    "leden": 57400,
+    "únor": 58600,
+    "březen": 59600,
+    "duben": 59600,
+    "květen": 59600,
+    "červen": 59600,
+    "červenec": 59600,
+    "srpen": 59600,
+    "září": 59600,
+    "říjen": 59600,
+    "listopad": 0,
+    "prosinec": 0
+  },
+  "apartments": [
+    {
+      "id": 1,
+      "currentDebt": 18432.2,
+      "area": 50,
+      "rent": 8700,
+      "tenant": "Milková",
+      "services": {
+        "voda": 1050,
+        "uklid": 250,
+        "pojisteni": 100
+      },
+      "due": [
+        9700,
+        10100,
+        10100,
+        9850,
+        10100,
+        10100,
+        10100,
+        10100,
+        12350
+      ],
+      "payments": {
+        "leden": 8750,
+        "únor": 8750,
+        "březen": 11156,
+        "duben": 8756,
+        "květen": 8756,
+        "červen": 8756,
+        "červenec": 8756,
+        "srpen": 5000
+      },
+      "dates": {
+        "leden": [
+          "2026-01-12"
+        ],
+        "únor": [
+          "2026-02-11"
+        ],
+        "březen": [
+          "2026-03-11",
+          "2026-03-31"
+        ],
+        "duben": [
+          "2026-04-13"
+        ],
+        "květen": [
+          "2026-05-12"
+        ],
+        "červen": [
+          "2026-06-11"
+        ],
+        "červenec": [
+          "2026-07-13"
+        ],
+        "srpen": [
+          "2026-08-19"
+        ]
+      },
+      "notes": {
+        "září": "v evidenci bez úhrady"
+      },
+      "history": "nedoplatek 2025: 466 Kč"
+    },
+    {
+      "id": 2,
+      "currentDebt": 19842.44,
+      "area": 60.26,
+      "rent": 10000,
+      "tenant": "Horváthová Marie",
+      "services": {
+        "voda": 1250,
+        "uklid": 250,
+        "pojisteni": 100
+      },
+      "due": [
+        11150,
+        11550,
+        11550,
+        11550,
+        11550,
+        11550,
+        11550,
+        11550,
+        11550
+      ],
+      "payments": {
+        "leden": 18080,
+        "únor": 12600,
+        "březen": 12600,
+        "duben": 11600,
+        "květen": 12600,
+        "červen": 11600,
+        "červenec": 12600,
+        "srpen": 7000
+      },
+      "dates": {
+        "leden": [
+          "2026-01-14",
+          "2026-01-26"
+        ],
+        "únor": [
+          "2026-02-13"
+        ],
+        "březen": [
+          "2026-03-13"
+        ],
+        "duben": [
+          "2026-04-15"
+        ],
+        "květen": [
+          "2026-05-14"
+        ],
+        "červen": [
+          "2026-06-30"
+        ],
+        "červenec": [
+          "2026-07-14"
+        ],
+        "srpen": [
+          "2026-08-30"
+        ]
+      },
+      "notes": {
+        "září": "v evidenci bez úhrady"
+      },
+      "history": "nedoplatek 2025: 16 180 Kč"
+    },
+    {
+      "id": 3,
+      "currentDebt": -4786.37,
+      "area": 44.4,
+      "rent": 8500,
+      "tenant": "Lendelová",
+      "services": {
+        "voda": 1650,
+        "uklid": 250,
+        "pojisteni": 100
+      },
+      "due": [
+        null,
+        10500,
+        10500,
+        10500,
+        10500,
+        10500,
+        10500,
+        10500,
+        10500
+      ],
+      "payments": {
+        "leden": null,
+        "únor": 5000,
+        "březen": 18300,
+        "duben": null,
+        "květen": 15500,
+        "červen": null,
+        "červenec": 18000,
+        "srpen": 20000,
+        "září": 10000
+      },
+      "dates": {
+        "únor": [
+          "2026-02-05"
+        ],
+        "březen": [
+          "2026-03-13",
+          "2026-03-20",
+          "2026-03-31"
+        ],
+        "květen": [
+          "2026-05-07",
+          "2026-05-25"
+        ],
+        "červenec": [
+          "2026-07-24",
+          "2026-07-27"
+        ],
+        "srpen": [],
+        "září": [
+          "2026-08-30"
+        ]
+      },
+      "notes": {
+        "leden": "nepronajímán",
+        "únor": "10 kauce",
+        "březen": "10 kauce",
+        "srpen": "zaplaceno z kauce",
+        "září": "nemají složenu žádnou kauci"
+      },
+      "history": ""
+    },
+    {
+      "id": 7,
+      "currentDebt": -3300.07,
+      "area": 60.26,
+      "rent": 10000,
+      "tenant": "Demeterová",
+      "services": {
+        "voda": 1650,
+        "uklid": 250,
+        "pojisteni": 100
+      },
+      "due": [
+        11600,
+        12000,
+        12000,
+        12000,
+        12000,
+        12000,
+        12000,
+        12000,
+        12000
+      ],
+      "payments": {
+        "leden": 11600,
+        "únor": 17483,
+        "březen": 12000,
+        "duben": 12000,
+        "květen": 12716,
+        "červen": 12000,
+        "červenec": 12000,
+        "srpen": 17367,
+        "září": 12000
+      },
+      "dates": {
+        "leden": [
+          "2025-12-15"
+        ],
+        "únor": [
+          "2026-01-12",
+          "2026-01-28"
+        ],
+        "březen": [
+          "2026-02-12"
+        ],
+        "duben": [
+          "2026-03-12"
+        ],
+        "květen": [
+          "2026-04-14"
+        ],
+        "červen": [
+          "2026-05-12"
+        ],
+        "červenec": [
+          "2026-06-12"
+        ],
+        "srpen": [
+          "2026-07-13"
+        ],
+        "září": [
+          "2026-08-13"
+        ]
+      },
+      "notes": {},
+      "history": "doplatek 2023: 5 883 Kč"
+    },
+    {
+      "id": 8,
+      "currentDebt": 23306.92,
+      "area": 63.24,
+      "rent": 10400,
+      "tenant": "Fedáková Leona Vanesa",
+      "services": {
+        "voda": 1450,
+        "uklid": 250,
+        "pojisteni": 100
+      },
+      "due": [
+        11500,
+        12000,
+        12000,
+        12000,
+        12000,
+        12000,
+        12000,
+        12000,
+        12000
+      ],
+      "payments": {
+        "leden": 11500,
+        "únor": null,
+        "březen": 24400,
+        "duben": 12200,
+        "květen": 22200,
+        "červen": 12000,
+        "červenec": 12000,
+        "srpen": null,
+        "září": null
+      },
+      "dates": {
+        "leden": [
+          "2026-01-20"
+        ],
+        "únor": [],
+        "březen": [
+          "2026-03-02",
+          "2026-03-13"
+        ],
+        "duben": [
+          "2026-04-20"
+        ],
+        "květen": [
+          "2026-05-14",
+          "2026-05-25"
+        ],
+        "červen": [
+          "2026-06-23"
+        ],
+        "červenec": [
+          "2026-07-20"
+        ],
+        "srpen": [],
+        "září": []
+      },
+      "notes": {
+        "únor": "bez úhrady",
+        "srpen": "bez úhrady",
+        "září": "bez úhrady"
+      },
+      "history": "nedoplatek 2025: 10 426 Kč"
+    },
+    {
+      "id": 9,
+      "currentDebt": 5906.76,
+      "area": 75.15,
+      "rent": 12000,
+      "tenant": "Krosčenová",
+      "services": {
+        "voda": 1450,
+        "uklid": 250,
+        "pojisteni": 100
+      },
+      "due": [
+        13200,
+        13800,
+        13800,
+        13800,
+        13800,
+        13800,
+        13800,
+        13800,
+        13800
+      ],
+      "payments": {
+        "leden": 9231,
+        "únor": 9231,
+        "březen": 9234,
+        "duben": 19231,
+        "květen": 9231,
+        "červen": 13231,
+        "červenec": 13231,
+        "srpen": 13231,
+        "září": 14000
+      },
+      "dates": {
+        "leden": [
+          "2025-12-12"
+        ],
+        "únor": [
+          "2026-01-12"
+        ],
+        "březen": [
+          "2026-02-11"
+        ],
+        "duben": [
+          "2026-03-10",
+          "2026-03-11"
+        ],
+        "květen": [
+          "2026-04-13"
+        ],
+        "červen": [
+          "2026-05-06",
+          "2026-05-12"
+        ],
+        "červenec": [
+          "2026-06-06",
+          "2026-06-11"
+        ],
+        "srpen": [
+          "2026-07-10",
+          "2026-07-13"
+        ],
+        "září": [
+          "2026-08-18"
+        ]
+      },
+      "notes": {},
+      "history": "nedoplatek 2023: 300 Kč"
+    }
+  ],
+  "hall": {
+    "name": "Hala Šumperk",
+    "share": 0.5,
+    "months": [
+      "květen",
+      "červen",
+      "červenec",
+      "srpen",
+      "září",
+      "říjen"
+    ],
+    "cages": [
+      {
+        "id": 1,
+        "rent": 7500,
+        "paid": {
+          "květen": 7500,
+          "červen": 7500,
+          "červenec": 7500,
+          "srpen": 7500,
+          "září": 7500,
+          "říjen": 7500
+        }
+      },
+      {
+        "id": 2,
+        "rent": 7500,
+        "paid": {
+          "květen": 7500,
+          "červen": 7500,
+          "červenec": 7500,
+          "srpen": 7500,
+          "září": 7500,
+          "říjen": 7500
+        }
+      },
+      {
+        "id": 3,
+        "rent": 7500,
+        "paid": {}
+      },
+      {
+        "id": 4,
+        "rent": 8000,
+        "paid": {
+          "červenec": 8000,
+          "srpen": 8000
+        }
+      }
+    ]
+  },
+  "vyuctovani": {
+    "1": {
+      "sheet": "3811",
+      "waterStart": 643,
+      "waterEnd": 673,
+      "consumption": 30,
+      "waterCost": 3346.2,
+      "waterAdvance": 9450,
+      "waterDiff": 6103.8,
+      "waterPrice": 111.54
+    },
+    "2": {
+      "sheet": "3812",
+      "waterStart": 867,
+      "waterEnd": 953,
+      "consumption": 86,
+      "waterCost": 9592.44,
+      "waterAdvance": 10800,
+      "waterDiff": 1207.56,
+      "waterPrice": 111.54
+    },
+    "3": {
+      "sheet": "3813",
+      "waterStart": 797,
+      "waterEnd": 906.5,
+      "consumption": 109.5,
+      "waterCost": 12213.63,
+      "waterAdvance": 13200,
+      "waterDiff": 986.37,
+      "waterPrice": 111.54
+    },
+    "7": {
+      "sheet": "3817",
+      "waterStart": 1120,
+      "waterEnd": 1274.5,
+      "consumption": 154.5,
+      "waterCost": 17232.93,
+      "waterAdvance": 14850,
+      "waterDiff": -2382.93,
+      "waterPrice": 111.54
+    },
+    "8": {
+      "sheet": "3818",
+      "waterStart": 948,
+      "waterEnd": 1047,
+      "consumption": 99,
+      "waterCost": 10930.92,
+      "waterAdvance": 11250,
+      "waterDiff": 319.08,
+      "waterPrice": 111.54
+    },
+    "9": {
+      "sheet": "3819",
+      "waterStart": 946,
+      "waterEnd": 990,
+      "consumption": 44,
+      "waterCost": 4907.76,
+      "waterAdvance": 13050,
+      "waterDiff": 8142.24,
+      "waterPrice": 111.54
+    }
+  }
+}
