@@ -5,33 +5,29 @@
     android:viewportWidth="108"
     android:viewportHeight="108">
 
-    <!-- Rockford app icon – concept 4: house + key -->
-    <path
-        android:fillColor="#0B5D3B"
-        android:pathData="M10,0 L98,0 Q108,0 108,10 L108,98 Q108,108 98,108 L10,108 Q0,108 0,98 L0,10 Q0,0 10,0 Z" />
+    <!-- Rockford concept 4: exact visual direction from the selected design -->
+    <path android:fillColor="#0A5A3B" android:pathData="M10,0 L98,0 Q108,0 108,10 L108,98 Q108,108 98,108 L10,108 Q0,108 0,98 L0,10 Q0,0 10,0 Z" />
 
-    <!-- House -->
-    <path
-        android:fillColor="#FFFFFF"
-        android:pathData="M24,49 L54,22 L84,49 L84,82 L24,82 Z" />
-    <path
-        android:fillColor="#0B5D3B"
-        android:pathData="M36,56 L72,56 L72,82 L36,82 Z" />
-    <path
-        android:fillColor="#0B5D3B"
-        android:pathData="M29,47 L54,25 L79,47 L73,47 L54,31 L35,47 Z" />
+    <!-- White house roof and left wall -->
+    <path android:fillColor="#FFFFFF" android:pathData="M22,42 L52.5,15 L83,42 L78.5,46 L52.5,23 L26.5,46 Z" />
+    <path android:fillColor="#FFFFFF" android:pathData="M25,42 L31,42 L31,75 L25,75 Z" />
+    <!-- chimney -->
+    <path android:fillColor="#FFFFFF" android:pathData="M65,26 L65,16 L72,16 L72,32 Z" />
 
-    <!-- Key -->
-    <path
-        android:fillColor="#B7E33A"
-        android:pathData="M72,66 A10,10 0 1,0 72,86 A10,10 0 0,0 72,66 M72,72 A4,4 0 1,1 72,80 A4,4 0 0,1 72,72 Z" />
-    <path
-        android:fillColor="#B7E33A"
-        android:pathData="M77,71 L92,56 L97,61 L82,76 Z" />
-    <path
-        android:fillColor="#B7E33A"
-        android:pathData="M88,60 L94,54 L99,59 L93,65 Z" />
-    <path
-        android:fillColor="#B7E33A"
-        android:pathData="M82,66 L87,61 L92,66 L87,71 Z" />
+    <!-- Four white windows -->
+    <path android:fillColor="#FFFFFF" android:pathData="M41,44 L47,44 L47,50 L41,50 Z" />
+    <path android:fillColor="#FFFFFF" android:pathData="M50,44 L56,44 L56,50 L50,50 Z" />
+    <path android:fillColor="#FFFFFF" android:pathData="M41,53 L47,53 L47,59 L41,59 Z" />
+    <path android:fillColor="#FFFFFF" android:pathData="M50,53 L56,53 L56,59 L50,59 Z" />
+
+    <!-- Lime key, angled upward/right -->
+    <path android:fillColor="#B7E33A" android:pathData="M73,42 A9,9 0,1 0,73 60 A9,9 0,0 0,73 42 M73,47 A4,4 0,1 1,73 55 A4,4 0,0 1,73 47 Z" />
+    <path android:fillColor="#B7E33A" android:pathData="M68,57 L77,57 L61,73 L55,73 Z" />
+    <path android:fillColor="#B7E33A" android:pathData="M57,70 L63,76 L59,80 L53,74 Z" />
+    <path android:fillColor="#B7E33A" android:pathData="M61,66 L67,72 L63,76 L57,70 Z" />
+    <path android:fillColor="#B7E33A" android:pathData="M65,62 L71,68 L67,72 L61,66 Z" />
+
+    <!-- Compact ROCKFORD / GROUP wordmark, represented as clean geometric strokes for launcher-size clarity -->
+    <path android:fillColor="#FFFFFF" android:pathData="M17,86 L17,82 L21,82 L21,86 Z M24,82 L28,82 L28,86 L24,86 Z M31,82 L35,82 L35,86 L31,86 Z M38,82 L42,82 L42,86 L38,86 Z M45,82 L49,82 L49,86 L45,86 Z M52,82 L56,82 L56,86 L52,86 Z M59,82 L63,82 L63,86 L59,86 Z M66,82 L70,82 L70,86 L66,86 Z M73,82 L77,82 L77,86 L73,86 Z M80,82 L84,82 L84,86 L80,86 Z" />
+    <path android:fillColor="#B7E33A" android:pathData="M30,91 L43,91 L43,93 L30,93 Z M47,91 L61,91 L61,93 L47,93 Z M65,91 L78,91 L78,93 L65,93 Z" />
 </vector>
